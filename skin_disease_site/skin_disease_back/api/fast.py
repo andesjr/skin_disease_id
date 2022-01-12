@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 #EDIT the name and/or location of the model
-model = tf.keras.models.load_model('saved_model/model_skin_cancer_model.h5')
+model = tf.keras.models.load_model('saved_model/skin_cancer_model.h5')
 
 
 @app.get("/")

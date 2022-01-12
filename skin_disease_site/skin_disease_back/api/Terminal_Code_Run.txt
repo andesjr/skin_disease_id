@@ -1,0 +1,9 @@
+Running the API, Docker and Streamlit
+
+API
+fast:app --reload
+
+
+for Streamlit:
+
+streamlit run streamlit_app.py
