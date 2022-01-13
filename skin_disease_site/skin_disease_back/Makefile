@@ -3,7 +3,7 @@ train_model:
 
 PROJECT_ID=	skin-disease-id
 
-IMAGE_NAME = skin_disease_site
+IMAGE_NAME = skin_cancer
 # replace by your personal project id
 GCR_REGION="europe-west1"
 
@@ -29,7 +29,7 @@ test_container_locally_on_mac_m1:
 	docker run -e PORT=8000 -p 8080:8000 arm_image_that_will_not_be_runnable_on_cloud_run_and_that_cannot_contain_tensorflow
 
 test_container_locally_on_linux_amd:
-	docker run -e PORT=8000 -p 8080:8000 eu.gcr.io/batch662/${IMAGE_NAME}
+	docker run -e PORT=8000 -p 8080:8000 eu.gcr.io/${PROJECT_ID}/${IMAGE_NAME}
 
 push_image_to_gcr:
 	docker push eu.gcr.io/${PROJECT_ID}/${IMAGE_NAME}

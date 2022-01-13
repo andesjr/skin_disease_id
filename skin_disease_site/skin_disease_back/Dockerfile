@@ -9,6 +9,8 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 COPY api api
-COPY saved_model saved_model
+COPY api/skin_cancer_model.h5 skin_cancer_model.h5
 
 CMD uvicorn api.fast:app --host 0.0.0.0 --port $PORT
+
+COPY /home/andesjr/code/andesjr/gcp/skin-disease-id-4b43f149320f.json /credentials.json
