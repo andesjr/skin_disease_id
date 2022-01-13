@@ -66,5 +66,7 @@ if uploaded_file:
     response = requests.post(api_url, newjson, headers=headers).json()
 
     response
+    for a,b in response.items():
+        st.write(f'La probabilité que ce soit un(e) {a} est de {b}%')
 
-    st.write(str(response))
+    #st.write(str(response))
