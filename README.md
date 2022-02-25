@@ -1,10 +1,8 @@
 # Data analysis
 - Document here the project: skin_disease_id
-- Description: Project Description
-- Data Source:
-- Type of analysis:
-
-Please document the project the better you can.
+- Description: Train a Deep Learning DCNN model to classify skin cancer images for use in an App that patients can use while waiting to get an appointment with a dermitaligist.
+- Data Source: Using the Kaggle Challenge HAM10000 data set.
+- Type of analysis: The data was balanced, so the first thing we needed to do was set aside a test and validation set of image then use the images we had left in train to create a balanced data set to train our model on. From there the team tried out several different models from DCNN style as well as using some transfer learning to try and come up with a model that would return the best score.
 
 # Startup the project
 
